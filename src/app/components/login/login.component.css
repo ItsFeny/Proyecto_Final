@@ -1,0 +1,66 @@
+
+.container-login
+{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+      
+    /*background con degradado*/
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    
+}
+
+.login
+{
+    width: 100%;
+    max-width: 330px;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: -50px;
+    padding-bottom: 10px;
+    background-color: #2d3436;
+    color: #5387ba;
+
+    /*Sombras de la tarjeta*/
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    
+}
+
+
+.login img 
+{
+    width: 30%;
+    margin-top: -170px;
+    filter: grayscale(35%);   
+}
+
+
+/*Angular Material Inputs*/
+
+.button
+{
+    background-color: #2a4969;
+    padding-left:  30px;
+    padding-right: 30px;
+}
+
+.spinner
+{
+    margin: 0 auto;
+    
+}
+
+.loading h2
+{
+    font-size: 30px;
+    color: #316497;
+    margin-top: 20px;
+    margin-left: 20px;  
+}
+
+
+
+

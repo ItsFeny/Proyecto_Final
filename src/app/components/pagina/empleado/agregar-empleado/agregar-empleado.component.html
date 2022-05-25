@@ -1,0 +1,78 @@
+
+<form [formGroup]="form" (ngSubmit)="agregarEmpleado()">
+  <div class="container">
+    <div class="row g-3 align-items-center" *ngIf="emc.id">
+      <div class="col-auto">
+        <label for="inputPassword6" class="col-form-label">ID</label>
+      </div>
+      <div class="col-auto">
+        <input type="Text"  class="form-control" aria-describedby="passwordHelpInline"
+        style="margin-left: 50px;
+               width: 240px;" formControlName="id">
+      </div>
+    </div>
+ <br>
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">Nombre</label>
+        </div>
+        <div class="col-auto">
+          <input type="Text"  class="form-control" aria-describedby="passwordHelpInline"
+          style="margin-left: 15px;width: 240px;" formControlName="nombre">
+        </div>
+      </div>
+      <br>
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">Apellido</label>
+        </div>
+        <div class="col-auto">
+          <input type="Text"  class="form-control" aria-describedby="passwordHelpInline"
+          style="margin-left: 13px;width: 240px;" formControlName="apellido">
+        </div>
+      </div>
+      <br>
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">Sexo</label>
+        </div>
+        <div class="col-auto">
+          <input type="Text" class="form-control" aria-describedby="passwordHelpInline"
+          style="margin-left: 30px;width: 240px;" formControlName="sexo">
+        </div>
+      </div>
+      <br>
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">Cargo</label>
+        </div>
+        <div class="col-auto">
+          <input type="Text"  class="form-control" aria-describedby="passwordHelpInline"
+          style="margin-left: 20px;width: 240px;" formControlName="cargo">
+        </div>
+      </div>
+      <br>
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">Telefono</label>
+        </div>
+        <div class="col-auto">
+          <input type="Text"  class="form-control" aria-describedby="passwordHelpInline"
+          formControlName="telefono"  style="width: 240px;">
+        </div>
+      </div>
+      <br>
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">Direccion</label>
+        </div>
+        <div class="col-auto">
+          <input type="Text" class="form-control" aria-describedby="passwordHelpInline"
+          formControlName="direccion" style="width: 240px;">
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </div>
+   </div>
+</form>

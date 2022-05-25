@@ -1,0 +1,63 @@
+<app-menu></app-menu>
+
+<br><br><br><br>
+ <div class="container">
+
+<h1 style="text-align: center;
+           font-size: 30px;
+           font-weight: 700;">Venta:</h1>
+<br><br>
+
+<div class="form-group col-sm-3">
+  <div class="input-group ">
+ <div class="input-group-text bg-white">
+   <i class="fa-solid fa-arrow-down-a-z"></i>
+ </div>
+ <input type="text" name="juego" id=""  class="form-control" placeholder="Filtrar Juego" style="border-color: rgb(11, 11, 119);"
+ [(ngModel)]="filterVenta">
+</div>
+</div>
+
+
+<button type="button" class="btn btn-primary float-end m-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+   {{accion | titlecase}}
+</button>
+  
+<table class="table caption-top" style="text-align: center;">
+  <thead >
+    <th>Id</th>
+    <th>IdCliente</th>
+    <th>Tienda</th>
+    <th>Juego</th>
+    <th>Precio</th>
+  </thead>
+  <tbody>
+   
+    <tr *ngFor="let Venta of ListVenta | filter:'juego':filterVenta ;">
+      <td>{{Venta.id}}</td>
+      <td>{{Venta.idCliente}}</td>
+      <td>{{Venta.tienda}}</td>
+      <td>{{Venta.juego}}</td>
+      <td>{{Venta.precio}}</td>
+      <td><i class="fa-solid fa-user-pen text-primary" style="cursor: pointer;" (click)="editarVenta(Venta)" title="Editar"></i></td>
+      <td><i class="fa-solid fa-trash-can text-danger" style="cursor: pointer;" (click)="eliminarVenta(Venta.id)" title="Eliminar"></i></td>
+   </tr>
+</table>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">{{accion}}</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <app-agregar-venta #addVenta></app-agregar-venta>
+        </div>
+      </div>
+    </div>
+  </div>
+  

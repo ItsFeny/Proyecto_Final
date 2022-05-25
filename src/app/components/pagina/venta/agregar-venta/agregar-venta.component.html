@@ -1,0 +1,60 @@
+
+<form [formGroup]="formm" (ngSubmit)="agregarVenta()">
+    <div class="container">
+      <div class="row g-3 align-items-center" *ngIf="emc.id">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">ID</label>
+        </div>
+        <div class="col-auto">
+          <input type="Text"  class="form-control" aria-describedby="passwordHelpInline"
+          style="margin-left: 50px;
+                 width: 240px;" formControlName="id">
+        </div>
+      </div>
+   <br>
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="inputPassword6" class="col-form-label">IdCliente</label>
+          </div>
+          <div class="col-auto">
+            <input type="Text"  class="form-control" aria-describedby="passwordHelpInline"
+            style="margin-left: 9px;width: 240px;" formControlName="idCliente">
+          </div>
+        </div>
+        <br>
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="inputPassword6" class="col-form-label">Tienda</label>
+          </div>
+          <div class="col-auto">
+            <input type="Text"  class="form-control" aria-describedby="passwordHelpInline"
+            style="margin-left: 19px;width: 240px;" formControlName="tienda">
+          </div>
+        </div>
+        <br>
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="inputPassword6" class="col-form-label">Juego</label>
+          </div>
+          <div class="col-auto">
+            <input type="Text" class="form-control" aria-describedby="passwordHelpInline"
+            style="margin-left: 23px;width: 240px;" formControlName="juego">
+          </div>
+        </div>
+        <br>
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="inputPassword6" class="col-form-label">Precio</label>
+          </div>
+          <div class="col-auto">
+            <input type="Text"  class="form-control" aria-describedby="passwordHelpInline"
+            style="margin-left: 20px;width: 240px;" formControlName="precio">
+          </div>
+        </div>
+        <br>
+      <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+     </div>
+  </form>
+
