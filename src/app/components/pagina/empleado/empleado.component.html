@@ -2,13 +2,21 @@
 <app-menu></app-menu>
 
 <br><br><br><br>
-<div class="container">
 
-<h1 style="text-align: center;
-           font-size: 30px;
-           font-weight: 700;">Empleados:</h1>
+
+<!--Contenedor General-->
+<div class="container">
+   
+   <!--Titulo-->
+   <h1 style="text-align: center;
+              font-size: 30px;
+              font-weight: 700;">
+   Empleados:</h1>
+
+
 <br><br>
 
+<!--Inputs de los inputs-->
 <div class="form-group col-sm-3">
    <div class="input-group ">
   <div class="input-group-text bg-white">
@@ -21,10 +29,15 @@
 
 
 
+
+<!--Boton de agregar y editar-->
 <button type="button" class="btn btn-primary float-end m-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
    {{accion | titlecase}}
 </button>
   
+
+
+<!--Tabla de datos-->
 <table class="table caption-top" style="text-align: center;">
   <thead >
     <th>Id</th>
@@ -52,7 +65,7 @@
 </div>
 
 
-<!-- Modal -->
+<!-- Modal de boostrap -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">

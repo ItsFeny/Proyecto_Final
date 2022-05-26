@@ -8,7 +8,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 export class EmpleadoServicesService {
 
 
-//url del swager
+//url del Swager
 private AppUrl = 'https://localhost:7012/';
 
 //url del endpoin de empleado
@@ -28,6 +28,10 @@ constructor(private http: HttpClient)
 
 }
 
+
+
+
+//CONFIGURACION DE ENDPOINS DE EMPLEADO
 
 
 
@@ -57,6 +61,8 @@ DeleteEmpleado(id: number): Observable<any>
 {
   return this.http.delete(this.AppUrl + this.ApiUrlEmpleado + id)
 }
+
+
 
 
 
@@ -94,6 +100,9 @@ DeleteCliente(id: number): Observable<any>
 {
   return this.http.delete(this.AppUrl + this.ApiUrlCliente + id)
 }
+
+
+
 
 
 

@@ -1,9 +1,14 @@
 <div class="container-login">
-    <div class="loading" *ngIf="loading">
+    
+  
+  <!--Pantalla de carga-->
+  <div class="loading" *ngIf="loading">
     <mat-spinner diameter="50" class="spinner"></mat-spinner>
         <h2>Cargando...</h2>
   </div>
     
+
+   <!--Contenedor del login-->
   <div class="login" *ngIf="!loading">
         <img src="../../../assets/img/Logo.png" alt="Logo">
         <br><br>
@@ -22,5 +27,5 @@
           <button mat-raised-button color="primary" class="button" type="submit" [disabled]="form.invalid">Ingresar</button>
         </form>
     </div>
-    
+      
 </div>

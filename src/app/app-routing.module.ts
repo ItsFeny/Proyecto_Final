@@ -6,6 +6,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './components/pagina/inicio/inicio.component';
 
+
+//Configuracion de las rutas del proyecto
 const routes: Routes = [
   {path:"",redirectTo:"/Login",pathMatch:'full'},
   { path:'Login',  component: LoginComponent},
